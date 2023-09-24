@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>wuyifei</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/footer.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+<body>
+<h2>简历模板</h2>
+<p></p><p></p>
+<pre>
+% 注意，compile tool选择XeLaTeX
+
+\documentclass{resume}
+
+\begin{document}
+\name{\sffamily\textbf{{Your Name}}}
+
+\contactInfo{\quad Phone: +86 XXX-XXXX-XXXX\ \ \ \ \ \ \ Email: youremail@gmail.com\ \ \ \ \ \ \  Github: $\cdot$/yourweb}
+
+\section{EDUCATION}
+\datedsubsection{College 2}{Sep. XXXX -- Now}
+\major{Master\hfill Electronic Information}
+\datedsubsection{College 1}{Sep. XXXX -- Jul. XXXX}
+\major{Bachelor\hfill Control Science and Engineering}
+
+\section{RESEARCH INTEREST}
+\begin{itemize}
+\item Key word 1; Key word 2
+\item Key word 3; Key word 4
+\end{itemize}
+
+\section{TRANSCRIPTS}
+\begin{itemize}
+
+\item \textbf{Master}\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\,\,	\rmfamily{Rank:} \ttfamily{1 / 28}\hfill \rmfamily{GPA:} \ttfamily{xx / 100}
+\item \textbf{\rmfamily{Bachelor}}   \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad	\rmfamily{Rank:} \ttfamily{1 / 83} \hfill \rmfamily{GPA:} \ttfamily{xx / 100}
+\end{itemize}
+\section{SCHOLARSHIPS}
+\begin{itemize}
+\item Award 1
+\item Award 2
+\item Award 3
+\end{itemize}
+
+\section{PUBLICATIONS}
+\begin{itemize}
+	\small
+    \item \underline{\textbf{Your name}}, XXX, XXX and XXX. Title of your paper. \textit{\textbf{Title of Publications}}. 2023, 619: 578-602.
+
+
+\end{itemize}
+
+\section{PROJECT EXPERIENCE}
+\begin{itemize}
+\item Research on global distributionally robust optimization scheduling based on scenario generation in power systems, \textit{NSFC}, 2022.1 -- Now.
+\item Research on low carbon transportation planning of urban agglomeration in Guangdong-Hong Kong-Macao Greater Bay Area, \textit{JSTI Group Co., Ltd}, 2021.10 -- 2021.12.
+\item Research on data-driven renewable energy scenario generation and distributionally robust optimization scheduling, \textit{NSFC}, 2020.9 -- 2021.12.
+\end{itemize}
+
+\section{TECHNICAL ABILITY}
+\begin{itemize}
+\item \programminglanguages{Python, Matlab}
+\item \technologies{Tensorflow, Keras, Scikit-learn, Pytorch, Gurobipy}
+\end{itemize}
+\end{document}
+
+</pre>
+
+<a class="text-large" href="../学术资源整理.html">BACK
+</body>
+</html>

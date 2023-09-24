@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>wuyifei</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/footer.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+<body>
+<h2>审稿意见回复LATEX模板</h2>
+<p></p><p></p>
+<pre>
+\documentclass[journal]{IEEEtran}
+<pre>
+\documentclass[journal,12pn, onecolumn]{IEEEtran}
+\usepackage{mathrsfs}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{subfigure}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{bbding}
+\usepackage{float}
+% \newcommand{\journal}[8]{\bibitem{#1} {#2}, ``{#3}'' \emph{#4}, vol. {#5}, no. {#6}, pp. {#7}, {#8}.}
+% \newcommand{\journalV}[7]{\bibitem{#1} {#2}, ``{#3}'' \emph{#4}, no. {#5}, pp. {#6}, {#7}.}
+% \newcommand{\journalN}[7]{\bibitem{#1} {#2}, ``{#3}'' \emph{#4}, vol. {#5}, pp. {#6}, {#7}.}
+% \newcommand{\journalP}[7]{\bibitem{#1} {#2}, ``{#3}'' \emph{#4}, vol. {#5}, no. {#6}, {#7}.}
+% \newcommand{\journalT}[4]{\bibitem{#1} {#2}, ``{#3}'' \emph{#4}, to be published.}
+% \newcommand{\conference}[6]{\bibitem{#1} {#2}, ``{#3}'' in \emph{#4}, {#5}, pp. {#6}.}
+% \newcommand{\conferenceP}[5]{\bibitem{#1} {#2}, ``{#3}'' in \emph{#4}, {#5}.}
+\newenvironment{Comment}[1][1]{\subsection*{\textcolor{blue}{\textbf{\underline{Comment (#1)}:}}}\par\it\color{blue}}{\par}
+\newenvironment{Answer}[0]{\subsection*{\textbf{\underline{Answer}:}}\par}{\par}
+\newenvironment{Action}[0]{\subsection*{\textbf{\underline{Action}:}}\par}{\par}
+\newenvironment{AnswerAction}[0]{\subsection*{\textbf{\underline{Answer \& Action}:}}\par}{\par}
+\newenvironment{Response}[0]{\subsection*{\textbf{\underline{Response}:}}\par}{\par}
+\newenvironment{Editor}[0]{\section*{\textcolor{blue}{\textbf{Editor}}}\par\color{blue}}{\par}
+\newenvironment{Reviewer}[1][1]{\section*{\textcolor{blue}{\textbf{Reviewer #1}}}\par\color{blue}}{\par}
+
+\begin{document}
+
+\title{Reply to Editor and Reviewers\\
+    \ \\
+    \normalsize Title: Conditional Style-based Generative Adversarial Networks for Renewable Scenario Generation\\
+    Authors: Ran Yuan, Bo Wang, Yeqi Sun, Xuanning Song, and Junzo Watada\\
+    Manuscript No.: TPWRS-01288-2021}
+
+\maketitle
+
+We greatly appreciate the editor's and the reviewers' attention to this research. In what follows, we present detailed explanations of how the manuscript has been revised in response to the provided comments.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Editor   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Editor}
+    % 这里写 编辑的意见
+\end{Editor}
+\begin{Response}
+    % 这里写 你的回复
+\end{Response}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Reviewer 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Reviewer}[1]
+\end{Reviewer}
+
+%%%%%%%%%%%%%%% R1 C1 %%%%%%%%%%%%%%%
+\begin{Comment}[1]
+    % 这里写 Reviewer1 的第1条意见
+\end{Comment}
+\begin{Answer}
+    % 这里写 针对该意见的回复
+\end{Answer}
+\begin{Action}
+    % 这里写 针对该意见所采取的修改
+\end{Action}
+
+%%%%%%%%%%%%%%% R1 C2 %%%%%%%%%%%%%%%
+\begin{Comment}[2]
+    % 这里写 Reviewer1 的第2条意见
+\end{Comment}
+\begin{Answer}
+    % 这里写 针对该意见的回复
+\end{Answer}
+\begin{Action}
+    % 这里写 针对该意见所采取的修改
+\end{Action}
+
+%%%%%%%%%%%%%%% R1 C3 %%%%%%%%%%%%%%%
+\begin{Comment}[3]
+    % 这里写 Reviewer1 的第3条意见
+\end{Comment}
+\begin{AnswerAction}
+    % 这里写 针对该意见的回复及修改
+\end{AnswerAction}
+
+%%%%%%%%%%%%%%% R1 C4 %%%%%%%%%%%%%%%
+% 以此类推
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Reviewer 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Reviewer}[2]
+\end{Reviewer}
+
+%%%%%%%%%%%%%%% R2 C1 %%%%%%%%%%%%%%%
+\begin{Comment}[1]
+    % 这里写 Reviewer2 的第1条意见
+\end{Comment}
+\begin{Answer}
+    % 这里写 针对该意见的回复
+\end{Answer}
+\begin{Action}
+    % 这里写 针对该意见所采取的修改
+\end{Action}
+
+%%%%%%%%%%%%%%% R2 C2 %%%%%%%%%%%%%%%
+\begin{Comment}[2]
+    % 这里写 Reviewer2 的第2条意见
+\end{Comment}
+\begin{Answer}
+    % 这里写 针对该意见的回复
+\end{Answer}
+\begin{Action}
+    % 这里写 针对该意见所采取的修改
+\end{Action}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Reviewer 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Reviewer}[3]
+\end{Reviewer}
+% 以此类推
+
+\end{document}
+</pre>
+
+<a class="text-large" href="../学术资源整理.html">BACK
+</body>
+</html>
